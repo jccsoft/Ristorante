@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Kreon:wght@700&family=Nunito+Sans:ital,wght@0,300;1,300&display=swap");
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-family: "Kreon", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin: 0;
+  line-height: 1em;
+  text-indent: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+}
+
+header {
+  background-color: #000000;
+  font-size: 0.67rem;
+  text-align: right;
+  padding: 0.4rem;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #000000;
+  font-size: 0.5rem;
+  padding: 0.4rem;
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
+
+.hero {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-text p {
+  margin: 0;
+}
+
+.main-info {
+  text-align: center;
+}
+
+.highlights {
+  display: flex;
+}
+.highlights.right {
+  flex-direction: row-reverse;
+}
+.highlights img,
+.highlights iframe,
+.highlights .highlights-text {
+  width: 50%;
+}
+.highlights img {
+  height: 100%;
+}
+
+.highlights-text h2,
+.highlights-text p {
+  padding-left: 0.67rem;
+  padding-right: 0.67rem;
+}
+
+.food-table {
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 45%;
+}
+.food-table th {
+  text-align: left;
+  font-weight: normal;
+}
+.food-table td {
+  text-align: right;
+}
+.food-table th,
+.food-table td {
+  padding-top: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.food-menu {
+  text-align: center;
+}
+
+.food-items {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.food-items li {
+  text-indent: -1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 32px;
+  }
+  h2 {
+    margin-top: 0.5rem;
+  }
+  .extra {
+    display: none;
+  }
+}
