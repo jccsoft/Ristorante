@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kreon:wght@700&family=Nunito+Sans:ital,wght@0,300;1,300&display=swap");
 
+/*#region BASE */
 html {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
@@ -51,14 +52,28 @@ footer {
   padding: 0.4rem;
   text-align: center;
 }
-footer a {
+a {
   color: inherit;
 }
 
+.img-credit {
+  position: absolute;
+  font-size: 0.4rem;
+  color: white;
+  top: 100%;
+}
+
+/*#endregion */
+
+/*#region HERO */
 .hero {
   text-align: center;
   color: #ffffff;
   position: relative;
+}
+.hero .img-credit {
+  left: 50%;
+  transform: translate(-50%, -170%);
 }
 
 .hero img {
@@ -78,9 +93,20 @@ footer a {
 .main-info {
   text-align: center;
 }
+/*#endregion */
 
+/*#region HIGHLIGHTS */
 .highlights {
   display: flex;
+  position: relative;
+}
+.highlights .img-credit {
+  left: 25%;
+  transform: translate(-50%, -100%);
+}
+.highlights.right .img-credit {
+  left: 75%;
+  transform: translate(-50%, -100%);
 }
 .highlights.right {
   flex-direction: row-reverse;
@@ -89,6 +115,8 @@ footer a {
 .highlights iframe,
 .highlights .highlights-text {
   width: 50%;
+  margin: 0;
+  padding: 0;
 }
 .highlights img {
   height: 100%;
@@ -99,7 +127,9 @@ footer a {
   padding-left: 0.67rem;
   padding-right: 0.67rem;
 }
+/*#endregion */
 
+/*#region MENÚ */
 .food-table {
   margin: auto;
   margin-bottom: 2rem;
@@ -131,6 +161,7 @@ footer a {
   text-indent: -1rem;
   margin-bottom: 1rem;
 }
+/*#endregion */
 
 @media screen and (max-width: 992px) {
   html {
